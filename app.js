@@ -35,52 +35,57 @@
 
 // --------------- დავალება 3 --------------- //
 
-class Car {
-  constructor(brand, model, speed = 0, motion = "The car is not moving") {
-    this.brand = brand;
-    this.model = model;
-    this.speed = speed;
-    this.motion = motion;
-  }
+// class Car {
+//   constructor(brand, model, speed = 0, motion = "The car is not moving") {
+//     this.brand = brand;
+//     this.model = model;
+//     this.speed = speed;
+//     this.motion = motion;
+//     motion = this.check_motion();
+//   }
 
-  check_motion() {
-    if (this.speed > 0) {
-      return (this.motion = "The car is moving");
-    }
-  }
+//   check_motion() {
+//     if (this.speed > 0) {
+//       return (this.motion = "The car is moving");
+//     } else if (this.speed <= 0) {
+//       return this.motion;
+//     }
+//   }
 
-  accelerate = (x) => {
-    if (x > 0) {
-      this.check_motion();
-      return (this.speed += x);
-    }
-  };
+//   accelerate = (x) => {
+//     if (x > 0) {
+//       this.check_motion();
+//       return (this.speed += x);
+//     }
+//   };
 
-  brake = (x) => {
-    if (this.speed >= x) {
-      this.check_motion();
-      return (this.speed -= x);
-    } else if (this.speed < x) {
-      this.check_motion();
-      return (this.speed = 0);
-    }
-  };
+//   brake = (x) => {
+//     if (this.speed >= x) {
+//       this.check_motion();
+//       return (this.speed -= x);
+//     } else if (this.speed < x) {
+//       this.check_motion();
+//       return (this.speed = 0);
+//     }
+//   };
 
-  emergency_brake() {
-    this.check_motion();
-    return (this.speed = 0);
-  }
+//   emergency_brake() {
+//     this.check_motion();
+//     return (this.speed = 0);
+//   }
 
-  status = () => {
-    return console.log(
-      `მანქანა ${this.brand} ${this.model} მოძრაობს ${this.speed} კმ/სთ სიჩქარით და სტატუსია: ${this.motion}.`
-    );
-  };
-}
+//   status = () => {
+//     return console.log(
+//       `მანქანა ${this.brand} ${this.model} მოძრაობს ${this.speed} კმ/სთ სიჩქარით და სტატუსია: ${this.motion}.`
+//     );
+//   };
+// }
 
-const car = new Car("Ford", "Fiesta", 12);
-car.brake();
-car.accelerate();
-// car.emergency_brake();
-car.status();
-console.log(car);
+// const car = new Car("Ford", "Fiesta", 12);
+// car.brake();
+// car.accelerate();
+// // car.emergency_brake();
+// car.status();
+// console.log(car);
+
+// --------------- დავალება 4 --------------- //
