@@ -89,3 +89,16 @@
 // console.log(car);
 
 // --------------- დავალება 4 --------------- //
+
+// const value = 0;
+// const value2 = 12;
+
+// const addAsync = new Promise((resolve, reject) => {
+//   if (value === 0 && value2 === 12) {
+//     resolve("Success");
+//   } else {
+//     reject("Failure");
+//   }
+// });
+
+// addAsync.then((val) => console.log(val)).catch((err) => console.log(err));
