@@ -46,32 +46,34 @@
 
 //   check_motion() {
 //     if (this.speed > 0) {
-//       return (this.motion = "The car is moving");
-//     } else if (this.speed <= 0) {
-//       return this.motion;
+//       this.motion = "The car is moving";
+//     } else {
+//       this.motion;
 //     }
 //   }
 
+//   //  აქ ვერაფრით ვერ გამოვასწორე ეს ბაგი სულ The car is moving ს მიწერს და ვერ ვხვდები რატომ
+
 //   accelerate = (x) => {
 //     if (x > 0) {
+//       this.speed += x;
 //       this.check_motion();
-//       return (this.speed += x);
 //     }
 //   };
 
 //   brake = (x) => {
 //     if (this.speed >= x) {
+//       this.speed -= x;
 //       this.check_motion();
-//       return (this.speed -= x);
 //     } else if (this.speed < x) {
+//       this.speed = 0;
 //       this.check_motion();
-//       return (this.speed = 0);
 //     }
 //   };
 
 //   emergency_brake() {
+//     this.speed = 0;
 //     this.check_motion();
-//     return (this.speed = 0);
 //   }
 
 //   status = () => {
