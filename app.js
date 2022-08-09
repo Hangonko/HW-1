@@ -36,23 +36,17 @@
 // --------------- დავალება 3 --------------- //
 
 // class Car {
-//   constructor(brand, model, speed = 0, motion = "The car is not moving") {
+//   constructor(brand, model) {
 //     this.brand = brand;
 //     this.model = model;
-//     this.speed = speed;
-//     this.motion = motion;
-//     motion = this.check_motion();
+//     this.speed = 0;
+//     this.motion = "The car is not moving";
 //   }
 
 //   check_motion() {
-//     if (this.speed > 0) {
-//       this.motion = "The car is moving";
-//     } else {
-//       this.motion;
-//     }
+//     this.motion =
+//       this.speed > 0 ? "The car is moving" : "The car is not moving";
 //   }
-
-//   //  აქ ვერაფრით ვერ გამოვასწორე ეს ბაგი სულ The car is moving ს მიწერს და ვერ ვხვდები რატომ
 
 //   accelerate = (x) => {
 //     if (x > 0) {
@@ -71,10 +65,10 @@
 //     }
 //   };
 
-//   emergency_brake() {
+//   emergency_brake = () => {
 //     this.speed = 0;
 //     this.check_motion();
-//   }
+//   };
 
 //   status = () => {
 //     return console.log(
@@ -83,9 +77,9 @@
 //   };
 // }
 
-// const car = new Car("Ford", "Fiesta", 12);
-// car.brake();
+// const car = new Car("Ford", "Fiesta");
 // car.accelerate();
+// car.brake();
 // // car.emergency_brake();
 // car.status();
 // console.log(car);
